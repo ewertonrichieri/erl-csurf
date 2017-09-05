@@ -1,3 +1,9 @@
+1.10.0 / 2017/09/05
+===================
+  * req.verifyToken function exposed if you want to manually verify
+  csrf token. Ex: When using express-http-proxy
+
+
 unreleased
 ==========
 
