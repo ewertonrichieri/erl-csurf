@@ -1,3 +1,7 @@
+1.10.1 / 2017/09/05
+===================
+  * Update README.md
+
 1.10.0 / 2017/09/05
 ===================
   * req.verifyToken function exposed if you want to manually verify
