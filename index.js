@@ -116,11 +116,11 @@ function csurf (options) {
         }
 
         // verify the incoming token
-        if (!ignoreMethod[req.method] && !tokens.verify(secret, value(req))) {
-            return next(createError(403, 'invalid csrf token', {
-                code: 'EBADCSRFTOKEN'
-            }))
-        }
+        if (secret != value(req)) {
+         return next(createError(403, 'invalid csrf token', {
+         code: 'EBADCSRFTOKEN'
+      }))
+    }
 
         next()
     }
