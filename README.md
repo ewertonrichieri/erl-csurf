@@ -1,17 +1,26 @@
-# csurf
+# erl-csurf
 
 ### Install
-    npm install express-csurf --save
 
-Clone of https://github.com/expressjs/csurf
+```
+npm install erl-csurf --save
+```
+
+To use in your app:
+
+```javascript
+app.use(cookieParser());
+csurf({ cookie: true });
+
+// ...declare all your other routes and middleware
+```
+
+
+Fork and reference of https://github.com/ashrith-kulai/express-csurf
 
 The official repo doesn't support manual token verification.
 Hence this fork. 
 
-Using this package exposes "verifyToken" in the request object. 
-
 ## License
 
 [MIT](LICENSE)
-
-
